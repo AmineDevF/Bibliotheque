@@ -24,7 +24,7 @@ CREATE TABLE books (
     title VARCHAR(255) NOT NULL,
     author VARCHAR(255) NOT NULL,
     category_id INT NOT NULL,
-    cover_image VARCHAR(255), -- URL ou chemin vers l'image de couverture
+    cover_image VARCHAR(255), 
     summary TEXT,
     status ENUM('available', 'borrowed', 'reserved') DEFAULT 'available',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
